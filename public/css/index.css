@@ -1,0 +1,368 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
+body{
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+/** navbar**/
+
+nav{
+    /* background-color: transparent;*/
+    border-bottom:  .5px solid rgb(245, 245, 245); 
+    direction: rtl;
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;  
+    position: fixed !important;
+    top: 0;
+    background-color: transparent;
+    width: 100%;
+    z-index: 10000000000000;
+   
+   
+}
+nav a, nav p{
+    color: rgb(245, 245, 245)  ;
+}
+
+.a-before-about:before{
+    content: "";  
+    top: 100%;
+    width: 30px;
+    height: 1px;   
+    position: absolute;
+    border-bottom: 3px solid black;
+    
+}
+.a-before-home:before{
+    content: "";
+    
+    top: 100%;
+    width: 60px;
+    height: 1px;  
+    position: absolute;
+    border-bottom: 3px solid black;  
+}
+.a-before-services:before{
+    content: "";   
+    top: 100%;
+    width: 60px;
+    height: 1px;
+    position: absolute;
+    border-bottom: 3px solid black;
+}
+.a-before-skills:before{
+    content: "";
+    top: 100%;
+    width: 60px;
+    height: 1px;  
+    position: absolute;
+    border-bottom: 3px solid black;
+}
+.a-before-works:before{
+    content: "";
+    top: 100%;
+    width: 100px;
+    height: 1px;  
+    position: absolute;
+    border-bottom: 3px solid black;
+}
+.a-before-contact:before{
+    content: "";
+    top: 100%;
+    width: 55px;
+    height: 1px;  
+    position: absolute;
+    border-bottom: 3px solid black;
+}
+
+
+
+@media screen and (min-width: 992px) {
+   
+    nav a{
+        margin: 0px 10px;
+    }
+
+
+ 
+  
+ 
+  }
+  @media screen and (max-width:991px) {
+    nav  {
+      direction: ltr;
+    }
+    nav li {
+        margin-left: auto;
+    };
+  }
+
+  .active-link{
+    color: red !important;
+    font-style: italic;
+}
+  /***** home section *****/
+
+  #home{
+      background-image: url(../images/laptop.jpeg);
+      height: 100vh;
+      background-size: cover;
+      text-align: right;
+  }
+  .home-info
+  {
+      padding-right: 30px;
+      border-right: 7px solid white;
+      margin-right: 15px;
+  }
+  .btn-home{
+      background-color: transparent;
+      color: white;
+      border: 1px solid white;
+      padding: 2px 2px;
+  }
+
+
+  /******** about*****/
+  .about-title{
+      border-bottom: 2px solid #FFD600; 
+      width: 10%;
+      padding-bottom: 10px;
+      font-weight: bolder;
+      font-size: 30px;
+      margin-top: 10px;
+      margin-right: 22px;
+  }
+  .about-cont-title
+  {
+      color: darkgray;
+      margin-right: 22px;
+
+  }
+  @media screen and (max-width:991px){
+    .about-title{
+        width: 25%;
+    }
+  }
+  @media screen and (max-width:450px){
+    .about-title{
+        width: 40%;
+    }
+  }
+
+  .info-title{
+      font-size: 20px;
+      color: #7AB1FF;
+     
+     
+  }
+  .about-info{
+      margin-top: 0px ;
+      padding-top: 0px;
+  }
+  .about-p{
+    color: darkgray;
+  }
+
+  .ul-grid{
+    list-style-type:none;
+    padding: 0px;
+    margin: 0px;
+  }
+  .yellow-span{
+       color: #FFD600;
+  }
+  .li-line{
+      border-bottom: 1px solid #7AB1FF ;
+      padding-bottom: 5px ;
+  }
+  .about-grid{
+      font-size: 16px;
+  }
+  .icons i{
+      cursor: pointer;
+      font-size: 20px;
+  }
+
+  /***** services *******/
+
+  .services-title{
+    color: #7AB1FF;
+    border-bottom: 2px solid #7AB1FF;
+    width: 9%;
+    margin-top: 20px;
+    padding-bottom: 10px;
+  }
+  @media screen and (max-width:991px){
+    .services-title{
+        width: 20%;
+    }
+  }
+  @media screen and (max-width:450px){
+    .services-title{
+        width: 30%;
+    }
+  }
+  .service-info
+  {
+      background-color: white;
+      -webkit-box-shadow: 1px black;
+              box-shadow: 1px black;
+      padding: 20px 20px;
+      cursor: pointer;
+  }
+  #services
+  {
+      background-color: #F2F8FD;
+     
+  }
+  .service-info img{
+      height: 50px;
+      width: 50px;
+      margin: auto;
+  }
+  .service-info-title{
+      font-weight: bolder;
+  }
+  .service-info-p{
+      color: darkgray;
+  }
+  .service-info:after{
+      content: "";
+      border-bottom: 3px solid #FFD600 ; 
+      width: 20%;
+      position: absolute;
+      top:98%;
+      left: 40%;
+
+  }
+
+
+  /******** skills *********/
+  .skills-title{
+    color: #7AB1FF;
+    border-bottom: 2px solid #7AB1FF;
+    width: 24%;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    
+  }
+  .skills-p{
+    color: darkgray;
+  }
+  .progress {
+      height: 5px;
+      clear: both;
+    }
+    .left{
+       
+        float: left;
+        
+      }
+      .right{
+          float: right;
+      }
+      @media screen and (max-width:991px){
+        .skills-title{
+            width: 60%;
+        }
+      }
+      @media screen and (max-width:400px){
+        .skills-title{
+            width: 100%;
+        }
+      }
+
+      /******* works  ******/
+      .works-title{
+        color: #7AB1FF;
+        border-bottom: 2px solid #7AB1FF;
+        width: 14%;
+        margin-top: 20px;
+        padding-bottom: 10px;
+        margin-bottom: 30px;
+      }
+      #works{
+          background-color: rgb(242, 248, 253);
+      }
+      @media screen and (max-width:991px){
+        .works-title{
+            width: 35% !important;
+            direction: rtl !important;
+        }
+      }
+      @media screen and (max-width:400px){
+        .works-title{
+            width: 60% !important;
+            direction: rtl !important;
+        }
+      }
+      .link-pill {
+          text-decoration: none;
+          color: black;
+          margin: 20px 10px;
+          margin-top: 30px;
+
+      }
+      .link-pill:hover{
+        text-decoration: none;
+        color: black;
+      }
+
+      /****** contact ****/
+      .contact-title{
+          color:#7AB1FF ;
+          border-bottom: 2px solid #7AB1FF;
+        width: 8%;
+        margin-top: 20px;
+        padding-bottom: 10px;
+        margin-bottom: 30px;
+        
+      }
+
+      @media screen and (max-width:991px){
+        .contact-title{
+            width: 25% !important;
+            direction: rtl !important;
+        }
+      }
+      @media screen and (max-width:400px){
+        .contact-title{
+            width: 37% !important;
+            direction: rtl !important;
+        }
+      }
+
+      .tell-us{
+          color: #7AB1FF;
+
+      }
+      .tellus-cont{
+          border: 1px solid black;
+          border-radius: 5px;
+      }
+      #contact{
+        border: 1px solid black;
+        
+      }
+      .s-btn{
+          height: 70px !important;
+          font-size: 35px;
+          
+      }
+
+      /******* footer ****/
+      #footer{
+          background-color: black;
+      }
+      #footer i{
+          cursor: pointer;
+      }
+
+

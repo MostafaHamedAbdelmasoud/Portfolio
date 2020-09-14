@@ -1,0 +1,34 @@
+nav{
+    /* background-color: transparent;*/
+    border-bottom:  .5px solid black; 
+    direction: rtl;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;  
+    position: fixed !important;
+    top: 0;
+    background-color: transparent;
+    width: 100%;
+    z-index: 10000000000000;
+   
+   
+}
+nav a, nav p{
+    color: black !important  ;
+}
+.work-title{
+    color: #7AB1FF;
+}
+.work-info-p {
+    color: darkgrey;
+}
+/******* footer ****/
+#footer{
+    background-color: black;
+}
+#footer i{
+    cursor: pointer;
+}
